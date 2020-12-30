@@ -1,8 +1,4 @@
-# XLand Decentralized
-
- This branch is 30 commits ahead, 1 commit behind VeriSafe:development.
-
-## Xland Dex
+# SwitchOS/switchdex
 
 [![Chat with us on Discord](https://camo.githubusercontent.com/68e11ca9dd6710b207e1e39cd3c972f77fda91b2df9dc237ed64a473d40a703c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d446973636f72642d626c756556696f6c65742e737667)](https://discord.gg/JqheZms) [![CircleCI](https://camo.githubusercontent.com/093f84b8ef4c0f3fe4c526e5308758ce780db8a955c1ce9f04569ece2065caee/68747470733a2f2f636972636c6563692e636f6d2f67682f307850726f6a6563742f30782d6c61756e63682d6b69742d66726f6e74656e642e7376673f7374796c653d737667)](https://circleci.com/gh/0xProject/0x-launch-kit-frontend) [![dependencies Status](https://camo.githubusercontent.com/1019a9fbd9a145b59575ad53d16eab0691ec5188cc2fb63a868459019b69606b/68747470733a2f2f64617669642d646d2e6f72672f76657269736166652f766572696465782f7374617475732e737667)](https://david-dm.org/verisafe/veridex) [![devDependencies Status](https://camo.githubusercontent.com/4486dd45d8b1dc99e17741e4f1742f1654bd08894472bf21867c84e4d54035b4/68747470733a2f2f64617669642d646d2e6f72672f76657269736166652f766572696465782f6465762d7374617475732e737667)](https://david-dm.org/verisafe/veridex?type=dev) [![Coverage Status](https://camo.githubusercontent.com/ef76c34bb708b9b772c849d2c3d11b5daaf1c20cb3739c917a086da09e6806e1/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f56657269536166652f566572694465782f62616467652e7376673f6272616e63683d646576656c6f706d656e74)](https://coveralls.io/github/VeriSafe/VeriDex?branch=development)
 
@@ -17,19 +13,19 @@ To use this fork the following actions are required:
 * Add a Powered by 0x and Switch
 * Don't use another pool associated with this code besides the one on: [Veridex Pool](https://0x.org/zrx/staking/pool/16). If you are market maker you can join Veridex market pool at [Join as Maker](https://dex.verisafe.io/#/erc20/join-as-maker)
 
-### Dex Wizard
+## Dex Wizard
 
-Please follow these instructions if you plan to use your own domain: [DEX on your domain](https://github.com/SwitchOS/switchdex/blob/development/ADD_DEX_BY_DOMAIN.md)
+Please follow these instructions if you plan to use your own domain: [DEX on your domain](https://github.com/SwitchOS/switchdex/blob/5f6d07edb0c8dcd49f28236357e7b7d50694c2bb/ADD_DEX_BY_DOMAIN.md)
 
-### Adding token
+## Adding token
 
-Please follow all the instructions here: [ADD TOKEN](https://github.com/SwitchOS/switchdex/blob/development/ADD_TOKEN.md)
+Please follow all the instructions here: [ADD TOKEN](https://github.com/SwitchOS/switchdex/blob/5f6d07edb0c8dcd49f28236357e7b7d50694c2bb/ADD_TOKEN.md)
 
-### Adding token to launchpad
+## Adding token to launchpad
 
-Please follow all the instructions here: [ADD TOKEN LAUNCHPAD](https://github.com/SwitchOS/switchdex/blob/development/ADD_TOKEN_LAUNCHPAD.md)
+Please follow all the instructions here: [ADD TOKEN LAUNCHPAD](https://github.com/SwitchOS/switchdex/blob/5f6d07edb0c8dcd49f28236357e7b7d50694c2bb/ADD_TOKEN_LAUNCHPAD.md)
 
-### Deployed DEX's
+## Deployed DEX's
 
 List of deployed dex's using forks of this source code:
 
@@ -45,7 +41,7 @@ If you have the URL of an existing relayer, you can use this frontend against it
 REACT_APP_RELAYER_URL='https://RELAYER_URL/' REACT_APP_RELAYER_WS_URL='wss://RELAYER_URL/' yarn start
 ```
 
-### Usage
+## Usage
 
 Clone this repository and install its dependencies:
 
@@ -55,7 +51,7 @@ You can optionally pass in any relayer endpoint that complies with the [0x Stand
 REACT_APP_RELAYER_URL='https://api.0x.org/sra' REACT_APP_RELAYER_WS_URL='wss://api.0x.org/sra' REACT_APP_NETWORK_ID=1 REACT_APP_CHAIN_ID=1 yarn start
 ```
 
-#### Creating a relayer for development
+### Creating a relayer for development
 
 If you don't have a relayer, you can start one locally for development. First create a `docker-compose.yml` file like this:
 
@@ -110,7 +106,7 @@ cd Veridex
 yarn
 ```
 
-### TODO
+## TODO
 
 This is a detailed list of planned features to add to this DEX \(includes Switch backend\) on long term:
 
@@ -149,7 +145,7 @@ This is a detailed list of planned features to add to this DEX \(includes Switch
 *  Add crypto price calculator
 *  Add Swap interface
 
-### IDEAS FOR COMMUNITY DEVELOPERS
+## IDEAS FOR COMMUNITY DEVELOPERS
 
 This is some ideas that community devs could work to add value to this dex on long term.
 
@@ -157,7 +153,7 @@ This is some ideas that community devs could work to add value to this dex on lo
 * \[\] Add Token factory
 * \[\] Wizard for Marketplace
 
-### Planned Wallets Support
+## Planned Wallets Support
 
 *  [Metamask](https://metamask.io/)
 *  [Torus](https://docs.tor.us/developers/getting-started)
@@ -169,7 +165,7 @@ This is some ideas that community devs could work to add value to this dex on lo
 *  [TrustWallet](https://trustwallet.com/)
 *  [CipherBrowser](https://www.cipherbrowser.com/)
 
-#### Using Switch relayer
+### Using Switch relayer
 
 ```text
 
@@ -181,7 +177,7 @@ REACT_APP_RELAYER_URL='https://dex-backend.verisafe.io/v3' yarn start
 
 This relayer has additional endpoints to enable market view data with stats and candles. We will be adding as an opt-in option use these features in your frontend. That way you can use a Standard Relayer without any issues.
 
-### Environment variables
+## Environment variables
 
 You can create a `.env` file to set environment variables and configure the behavior of the dApp. Start by copying the example file \(`cp .env.example .env`\) and modify the ones you want. Some things you can configure are:
 
@@ -195,13 +191,13 @@ You can create a `.env` file to set environment variables and configure the beha
 
 Check `.env.example` for the full list.
 
-#### Using custom themes
+### Using custom themes
 
-If you want to add your own theme for the app, please read the [THEMES.md](https://github.com/SwitchOS/switchdex/blob/development/THEMES.md) file
+If you want to add your own theme for the app, please read the [THEMES.md](https://github.com/SwitchOS/switchdex/blob/5f6d07edb0c8dcd49f28236357e7b7d50694c2bb/THEMES.md) file
 
-#### Using custom Config on the DEX
+### Using custom Config on the DEX
 
-If you want to config the app and markets, please read the [CONFIG.md](https://github.com/SwitchOS/switchdex/blob/development/CONFIG.md) file
+If you want to config the app and markets, please read the [CONFIG.md](https://github.com/SwitchOS/switchdex/blob/5f6d07edb0c8dcd49f28236357e7b7d50694c2bb/CONFIG.md) file
 
 ```text
 
