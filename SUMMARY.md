@@ -1,7 +1,6 @@
 # Table of contents
 
 * [XLand Decentralized](README.md)
-* [SwitchDex — ERC20 trading, swap, defi, fiat-onramp and market maker tools](dex.md)
 * [SwitchOS/xland](switchos-xland.md)
 * [SwitchOS/xland](switchos-xland-1.md)
 * [network](network/README.md)
